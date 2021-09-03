@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://awslcool.github.io</id>
+    <title>Gridea</title>
+    <updated>2021-09-03T04:24:02.274Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://awslcool.github.io"/>
+    <link rel="self" href="https://awslcool.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://awslcool.github.io/images/avatar.png</logo>
+    <icon>https://awslcool.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2021, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[一看就会的免费静态博客教程]]></title>
+        <id>https://awslcool.github.io/post/yi-kan-jiu-hui-de-mian-fei-jing-tai-bo-ke-jiao-cheng/</id>
+        <link href="https://awslcool.github.io/post/yi-kan-jiu-hui-de-mian-fei-jing-tai-bo-ke-jiao-cheng/">
+        </link>
+        <updated>2021-09-03T04:04:29.000Z</updated>
+        <content type="html"><![CDATA[<h5 id="前言">前言</h5>
+<p>​	先给大家简单的介绍一下吧，Gridea是一个静态博客写作客户端，相较于其他主流的静态博客，比如之前介绍过的hexo，它更简单更容易上手，只需要了解一点点Markdown的语法进行写作就可以，这就意味着哪怕是完全没有接触过这方面的人也能够在短短几分钟之内搭建一个自己的博客。<br>
+​	那么下面就是具体操作的步骤！</p>
+<h5 id="一-确定托管代码的平台">一、确定托管代码的平台</h5>
+<p>​	Gridea是可以将博客部署到Github、Coding和自己的服务器上的。但是很明显，服务器要花钱，选择建静态博客的大部分人，还是因为不想花非刚需的钱去买主机或者服务器。而Coding新版也是要收费的，虽然也不贵而且还有六个月的试用期，但是想要用它的pages服务还需要实名认证，这也相对繁琐。因此我推荐将博客部署到github。往下的教程也是以Github为例。</p>
+<h5 id="二-注册github账号并创建仓库">二、注册Github账号并创建仓库</h5>
+<h6 id="1-如果你没有github的账号那么可以进入官网开始注册注意一下用户名的填写如果不使用自定义域名用户名将会是你的github分配给你的域名比如你的用户名为xxx那么你的域名会是xxxgithubio">1、如果你没有Github的账号，那么可以进入官网开始注册（注意一下用户名的填写，如果不使用自定义域名，用户名将会是你的Github分配给你的域名，比如你的用户名为xxx，那么你的域名会是xxx.github,io）。</h6>
+<pre><code>Github官网：https://github.com 
+</code></pre>
+<h6 id="2-新建仓库如图所示点击右上角的号然后点击new-respository即可">2、新建仓库，如图所示，点击右上角的“+”号，然后点击“New respository&quot;即可。</h6>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031041028.png" alt="image-20210903104124892" loading="lazy"></figure>
+<p></p>
+<h6 id="3-配置仓库">3、配置仓库</h6>
+<p>​	这里推荐仓库名填写格式为：”用户名.github.io“。</p>
+<p>​	然后点击”Add a README file“，再点击”Create repository“即可。</p>
+<figure data-type="image" tabindex="2"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031112516.png" alt="image-20210903111250432" loading="lazy"></figure>
+<h6 id="4-点击仓库的settings进入pages">4、点击仓库的”Settings“，进入”pages“。</h6>
+<p><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031114786.png" alt="image-20210903111403711" loading="lazy"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031115383.png" alt="image-20210903111524299" loading="lazy"></p>
+<p>​	你就会看到你的域名已经正常显示出来了</p>
+<figure data-type="image" tabindex="3"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031118431.png" alt="image-20210903111849347" loading="lazy"></figure>
+<h5 id="三-创建github-token">三、创建Github token</h5>
+<h6 id="1-点击右上角头像的settings选择菜单最下面的developer-settings">1、点击右上角头像的settings，选择菜单最下面的developer settings</h6>
+<figure data-type="image" tabindex="4"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031126655.png" alt="image-20210903112639601" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031127594.png" alt="image-20210903112745508" loading="lazy"></figure>
+<h6 id="2-点击personal-acces-tokens再点击generate-new-token">2、点击”Personal acces tokens“，再点击”Generate new token“。</h6>
+<figure data-type="image" tabindex="6"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031129010.png" alt="image-20210903112908952" loading="lazy"></figure>
+<h6 id="3-note备注可以随便写这里写个griddea然后选择no-expiration再把repo打上">3、Note备注可以随便写，这里写个”Griddea“，然后选择”No expiration“，再把”repo“打上✓。</h6>
+<figure data-type="image" tabindex="7"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031132269.png" alt="image-20210903113217190" loading="lazy"></figure>
+<p>然后下拉页面，选择”Generate token“创建token。</p>
+<figure data-type="image" tabindex="8"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031134079.png" alt="image-20210903113455025" loading="lazy"></figure>
+<h6 id="4-复制token记得保存好因为只显示一次忘了又得重新申请">4、复制token，记得保存好，因为只显示一次，忘了又得重新申请。</h6>
+<figure data-type="image" tabindex="9"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031137064.png" alt="image-20210903113712997" loading="lazy"></figure>
+<h5 id="四-配置gridea">四、配置Gridea</h5>
+<p>准备工作都完成了接下来是配置Gridea。</p>
+<p>Gridea官网： https://gridea.dev</p>
+<h6 id="1-进入官网根据你的电脑系统下载好gridea客户端这里以windows为例">1、进入官网，根据你的电脑系统下载好Gridea客户端，这里以windows为例。</h6>
+<figure data-type="image" tabindex="10"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031141526.png" alt="image-20210903114158437" loading="lazy"></figure>
+<p>你也可以直接在下方链接下载，因为在GIthub上下载是比较慢的。</p>
+<p>推荐国内Gitee下载源：https://gitee.com/fehey/gridea/releases/v0.9.2</p>
+<figure data-type="image" tabindex="11"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031146684.png" alt="image-20210903114657628" loading="lazy"></figure>
+<h6 id="2-安装好后打开gridea的远程配置你的github信息然后保存如下图">2、安装好后，打开Gridea的”远程“配置你的Github信息，然后保存，如下图。</h6>
+<figure data-type="image" tabindex="12"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031157415.png" alt="image-20210903115709333" loading="lazy"></figure>
+<p>然后点击左下角的检测远程链接，如果配置没问题，那就会显示远程连接成功。</p>
+<p>如果连接失败，还请回到上述步骤自行检查。</p>
+<figure data-type="image" tabindex="13"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031159807.png" alt="image-20210903115902728" loading="lazy"></figure>
+<h6 id="3-发布文章">3、发布文章。</h6>
+<p>点击文章，点击右上角的”+“号即可。</p>
+<figure data-type="image" tabindex="14"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031203578.png" alt="image-20210903120341495" loading="lazy"></figure>
+<p>编辑完成后，点击右上角保存即可。</p>
+<figure data-type="image" tabindex="15"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031207576.png" alt="image-20210903120729462" loading="lazy"></figure>
+<h6 id="4-预览和同步">4、预览和同步</h6>
+<p>点击预览，本地预览后没问题即可点击”同步“推送至github。</p>
+<figure data-type="image" tabindex="16"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031208197.png" alt="image-20210903120823099" loading="lazy"></figure>
+<p>当然，你还可以继续配置其他信息，比如自己的网站名字，头像，页脚，图标等等。</p>
+<figure data-type="image" tabindex="17"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031216640.png" alt="image-20210903121615559" loading="lazy"></figure>
+<p>由于篇幅原因在此不多做介绍，可以自行摸索~</p>
+<p>到此本教程就结束了！</p>
+<p>蜀黍我啊，最喜欢一键三连了(◍ ´꒳` ◍)</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://awslcool.github.io/post/hello-gridea/</id>
+        <link href="https://awslcool.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>

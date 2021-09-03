@@ -1,0 +1,267 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>一看就会的免费静态博客教程 | Gridea</title>
+<link rel="shortcut icon" href="https://awslcool.github.io/favicon.ico?v=1630643035991">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://awslcool.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="一看就会的免费静态博客教程 | Gridea - Atom Feed" href="https://awslcool.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="前言
+​	先给大家简单的介绍一下吧，Gridea是一个静态博客写作客户端，相较于其他主流的静态博客，比如之前介绍过的hexo，它更简单更容易上手，只需要了解一点点Markdown的语法进行写作就可以，这就意味着哪怕是完全没有接触过这方面的人..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://awslcool.github.io">
+  <img class="avatar" src="https://awslcool.github.io/images/avatar.png?v=1630643035991" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              一看就会的免费静态博客教程
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-09-03
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h5 id="前言">前言</h5>
+<p>​	先给大家简单的介绍一下吧，Gridea是一个静态博客写作客户端，相较于其他主流的静态博客，比如之前介绍过的hexo，它更简单更容易上手，只需要了解一点点Markdown的语法进行写作就可以，这就意味着哪怕是完全没有接触过这方面的人也能够在短短几分钟之内搭建一个自己的博客。<br>
+​	那么下面就是具体操作的步骤！</p>
+<h5 id="一-确定托管代码的平台">一、确定托管代码的平台</h5>
+<p>​	Gridea是可以将博客部署到Github、Coding和自己的服务器上的。但是很明显，服务器要花钱，选择建静态博客的大部分人，还是因为不想花非刚需的钱去买主机或者服务器。而Coding新版也是要收费的，虽然也不贵而且还有六个月的试用期，但是想要用它的pages服务还需要实名认证，这也相对繁琐。因此我推荐将博客部署到github。往下的教程也是以Github为例。</p>
+<h5 id="二-注册github账号并创建仓库">二、注册Github账号并创建仓库</h5>
+<h6 id="1-如果你没有github的账号那么可以进入官网开始注册注意一下用户名的填写如果不使用自定义域名用户名将会是你的github分配给你的域名比如你的用户名为xxx那么你的域名会是xxxgithubio">1、如果你没有Github的账号，那么可以进入官网开始注册（注意一下用户名的填写，如果不使用自定义域名，用户名将会是你的Github分配给你的域名，比如你的用户名为xxx，那么你的域名会是xxx.github,io）。</h6>
+<pre><code>Github官网：https://github.com 
+</code></pre>
+<h6 id="2-新建仓库如图所示点击右上角的号然后点击new-respository即可">2、新建仓库，如图所示，点击右上角的“+”号，然后点击“New respository&quot;即可。</h6>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031041028.png" alt="image-20210903104124892" loading="lazy"></figure>
+<p></p>
+<h6 id="3-配置仓库">3、配置仓库</h6>
+<p>​	这里推荐仓库名填写格式为：”用户名.github.io“。</p>
+<p>​	然后点击”Add a README file“，再点击”Create repository“即可。</p>
+<figure data-type="image" tabindex="2"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031112516.png" alt="image-20210903111250432" loading="lazy"></figure>
+<h6 id="4-点击仓库的settings进入pages">4、点击仓库的”Settings“，进入”pages“。</h6>
+<p><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031114786.png" alt="image-20210903111403711" loading="lazy"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031115383.png" alt="image-20210903111524299" loading="lazy"></p>
+<p>​	你就会看到你的域名已经正常显示出来了</p>
+<figure data-type="image" tabindex="3"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031118431.png" alt="image-20210903111849347" loading="lazy"></figure>
+<h5 id="三-创建github-token">三、创建Github token</h5>
+<h6 id="1-点击右上角头像的settings选择菜单最下面的developer-settings">1、点击右上角头像的settings，选择菜单最下面的developer settings</h6>
+<figure data-type="image" tabindex="4"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031126655.png" alt="image-20210903112639601" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031127594.png" alt="image-20210903112745508" loading="lazy"></figure>
+<h6 id="2-点击personal-acces-tokens再点击generate-new-token">2、点击”Personal acces tokens“，再点击”Generate new token“。</h6>
+<figure data-type="image" tabindex="6"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031129010.png" alt="image-20210903112908952" loading="lazy"></figure>
+<h6 id="3-note备注可以随便写这里写个griddea然后选择no-expiration再把repo打上">3、Note备注可以随便写，这里写个”Griddea“，然后选择”No expiration“，再把”repo“打上✓。</h6>
+<figure data-type="image" tabindex="7"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031132269.png" alt="image-20210903113217190" loading="lazy"></figure>
+<p>然后下拉页面，选择”Generate token“创建token。</p>
+<figure data-type="image" tabindex="8"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031134079.png" alt="image-20210903113455025" loading="lazy"></figure>
+<h6 id="4-复制token记得保存好因为只显示一次忘了又得重新申请">4、复制token，记得保存好，因为只显示一次，忘了又得重新申请。</h6>
+<figure data-type="image" tabindex="9"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031137064.png" alt="image-20210903113712997" loading="lazy"></figure>
+<h5 id="四-配置gridea">四、配置Gridea</h5>
+<p>准备工作都完成了接下来是配置Gridea。</p>
+<p>Gridea官网： https://gridea.dev</p>
+<h6 id="1-进入官网根据你的电脑系统下载好gridea客户端这里以windows为例">1、进入官网，根据你的电脑系统下载好Gridea客户端，这里以windows为例。</h6>
+<figure data-type="image" tabindex="10"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031141526.png" alt="image-20210903114158437" loading="lazy"></figure>
+<p>你也可以直接在下方链接下载，因为在GIthub上下载是比较慢的。</p>
+<p>推荐国内Gitee下载源：https://gitee.com/fehey/gridea/releases/v0.9.2</p>
+<figure data-type="image" tabindex="11"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031146684.png" alt="image-20210903114657628" loading="lazy"></figure>
+<h6 id="2-安装好后打开gridea的远程配置你的github信息然后保存如下图">2、安装好后，打开Gridea的”远程“配置你的Github信息，然后保存，如下图。</h6>
+<figure data-type="image" tabindex="12"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031157415.png" alt="image-20210903115709333" loading="lazy"></figure>
+<p>然后点击左下角的检测远程链接，如果配置没问题，那就会显示远程连接成功。</p>
+<p>如果连接失败，还请回到上述步骤自行检查。</p>
+<figure data-type="image" tabindex="13"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031159807.png" alt="image-20210903115902728" loading="lazy"></figure>
+<h6 id="3-发布文章">3、发布文章。</h6>
+<p>点击文章，点击右上角的”+“号即可。</p>
+<figure data-type="image" tabindex="14"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031203578.png" alt="image-20210903120341495" loading="lazy"></figure>
+<p>编辑完成后，点击右上角保存即可。</p>
+<figure data-type="image" tabindex="15"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031207576.png" alt="image-20210903120729462" loading="lazy"></figure>
+<h6 id="4-预览和同步">4、预览和同步</h6>
+<p>点击预览，本地预览后没问题即可点击”同步“推送至github。</p>
+<figure data-type="image" tabindex="16"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031208197.png" alt="image-20210903120823099" loading="lazy"></figure>
+<p>当然，你还可以继续配置其他信息，比如自己的网站名字，头像，页脚，图标等等。</p>
+<figure data-type="image" tabindex="17"><img src="https://cdn.jsdelivr.net/gh/awslnotbad/picture@main/img/202109031216640.png" alt="image-20210903121615559" loading="lazy"></figure>
+<p>由于篇幅原因在此不多做介绍，可以自行摸索~</p>
+<p>到此本教程就结束了！</p>
+<p>蜀黍我啊，最喜欢一键三连了(◍ ´꒳` ◍)</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E5%89%8D%E8%A8%80">前言</a></li>
+<li><a href="#%E4%B8%80-%E7%A1%AE%E5%AE%9A%E6%89%98%E7%AE%A1%E4%BB%A3%E7%A0%81%E7%9A%84%E5%B9%B3%E5%8F%B0">一、确定托管代码的平台</a></li>
+<li><a href="#%E4%BA%8C-%E6%B3%A8%E5%86%8Cgithub%E8%B4%A6%E5%8F%B7%E5%B9%B6%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93">二、注册Github账号并创建仓库</a>
+<ul>
+<li><a href="#1-%E5%A6%82%E6%9E%9C%E4%BD%A0%E6%B2%A1%E6%9C%89github%E7%9A%84%E8%B4%A6%E5%8F%B7%E9%82%A3%E4%B9%88%E5%8F%AF%E4%BB%A5%E8%BF%9B%E5%85%A5%E5%AE%98%E7%BD%91%E5%BC%80%E5%A7%8B%E6%B3%A8%E5%86%8C%E6%B3%A8%E6%84%8F%E4%B8%80%E4%B8%8B%E7%94%A8%E6%88%B7%E5%90%8D%E7%9A%84%E5%A1%AB%E5%86%99%E5%A6%82%E6%9E%9C%E4%B8%8D%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E7%94%A8%E6%88%B7%E5%90%8D%E5%B0%86%E4%BC%9A%E6%98%AF%E4%BD%A0%E7%9A%84github%E5%88%86%E9%85%8D%E7%BB%99%E4%BD%A0%E7%9A%84%E5%9F%9F%E5%90%8D%E6%AF%94%E5%A6%82%E4%BD%A0%E7%9A%84%E7%94%A8%E6%88%B7%E5%90%8D%E4%B8%BAxxx%E9%82%A3%E4%B9%88%E4%BD%A0%E7%9A%84%E5%9F%9F%E5%90%8D%E4%BC%9A%E6%98%AFxxxgithubio">1、如果你没有Github的账号，那么可以进入官网开始注册（注意一下用户名的填写，如果不使用自定义域名，用户名将会是你的Github分配给你的域名，比如你的用户名为xxx，那么你的域名会是xxx.github,io）。</a></li>
+<li><a href="#2-%E6%96%B0%E5%BB%BA%E4%BB%93%E5%BA%93%E5%A6%82%E5%9B%BE%E6%89%80%E7%A4%BA%E7%82%B9%E5%87%BB%E5%8F%B3%E4%B8%8A%E8%A7%92%E7%9A%84%E5%8F%B7%E7%84%B6%E5%90%8E%E7%82%B9%E5%87%BBnew-respository%E5%8D%B3%E5%8F%AF">2、新建仓库，如图所示，点击右上角的“+”号，然后点击“New respository&quot;即可。</a></li>
+<li><a href="#3-%E9%85%8D%E7%BD%AE%E4%BB%93%E5%BA%93">3、配置仓库</a></li>
+<li><a href="#4-%E7%82%B9%E5%87%BB%E4%BB%93%E5%BA%93%E7%9A%84settings%E8%BF%9B%E5%85%A5pages">4、点击仓库的”Settings“，进入”pages“。</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%89-%E5%88%9B%E5%BB%BAgithub-token">三、创建Github token</a>
+<ul>
+<li><a href="#1-%E7%82%B9%E5%87%BB%E5%8F%B3%E4%B8%8A%E8%A7%92%E5%A4%B4%E5%83%8F%E7%9A%84settings%E9%80%89%E6%8B%A9%E8%8F%9C%E5%8D%95%E6%9C%80%E4%B8%8B%E9%9D%A2%E7%9A%84developer-settings">1、点击右上角头像的settings，选择菜单最下面的developer settings</a></li>
+<li><a href="#2-%E7%82%B9%E5%87%BBpersonal-acces-tokens%E5%86%8D%E7%82%B9%E5%87%BBgenerate-new-token">2、点击”Personal acces tokens“，再点击”Generate new token“。</a></li>
+<li><a href="#3-note%E5%A4%87%E6%B3%A8%E5%8F%AF%E4%BB%A5%E9%9A%8F%E4%BE%BF%E5%86%99%E8%BF%99%E9%87%8C%E5%86%99%E4%B8%AAgriddea%E7%84%B6%E5%90%8E%E9%80%89%E6%8B%A9no-expiration%E5%86%8D%E6%8A%8Arepo%E6%89%93%E4%B8%8A">3、Note备注可以随便写，这里写个”Griddea“，然后选择”No expiration“，再把”repo“打上✓。</a></li>
+<li><a href="#4-%E5%A4%8D%E5%88%B6token%E8%AE%B0%E5%BE%97%E4%BF%9D%E5%AD%98%E5%A5%BD%E5%9B%A0%E4%B8%BA%E5%8F%AA%E6%98%BE%E7%A4%BA%E4%B8%80%E6%AC%A1%E5%BF%98%E4%BA%86%E5%8F%88%E5%BE%97%E9%87%8D%E6%96%B0%E7%94%B3%E8%AF%B7">4、复制token，记得保存好，因为只显示一次，忘了又得重新申请。</a></li>
+</ul>
+</li>
+<li><a href="#%E5%9B%9B-%E9%85%8D%E7%BD%AEgridea">四、配置Gridea</a>
+<ul>
+<li><a href="#1-%E8%BF%9B%E5%85%A5%E5%AE%98%E7%BD%91%E6%A0%B9%E6%8D%AE%E4%BD%A0%E7%9A%84%E7%94%B5%E8%84%91%E7%B3%BB%E7%BB%9F%E4%B8%8B%E8%BD%BD%E5%A5%BDgridea%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%BF%99%E9%87%8C%E4%BB%A5windows%E4%B8%BA%E4%BE%8B">1、进入官网，根据你的电脑系统下载好Gridea客户端，这里以windows为例。</a></li>
+<li><a href="#2-%E5%AE%89%E8%A3%85%E5%A5%BD%E5%90%8E%E6%89%93%E5%BC%80gridea%E7%9A%84%E8%BF%9C%E7%A8%8B%E9%85%8D%E7%BD%AE%E4%BD%A0%E7%9A%84github%E4%BF%A1%E6%81%AF%E7%84%B6%E5%90%8E%E4%BF%9D%E5%AD%98%E5%A6%82%E4%B8%8B%E5%9B%BE">2、安装好后，打开Gridea的”远程“配置你的Github信息，然后保存，如下图。</a></li>
+<li><a href="#3-%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0">3、发布文章。</a></li>
+<li><a href="#4-%E9%A2%84%E8%A7%88%E5%92%8C%E5%90%8C%E6%AD%A5">4、预览和同步</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://awslcool.github.io/post/hello-gridea/">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://awslcool.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
