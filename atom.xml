@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://awslcool.github.io</id>
-    <title>Gridea</title>
-    <updated>2021-09-03T04:33:02.683Z</updated>
+    <title>夏末随风</title>
+    <updated>2021-09-03T04:34:48.516Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://awslcool.github.io"/>
     <link rel="self" href="https://awslcool.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://awslcool.github.io/images/avatar.png</logo>
     <icon>https://awslcool.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Gridea</rights>
+    <rights>All rights reserved 2021, 夏末随风</rights>
     <entry>
         <title type="html"><![CDATA[一看就会的免费静态博客教程]]></title>
         <id>https://awslcool.github.io/post/yi-kan-jiu-hui-de-mian-fei-jing-tai-bo-ke-jiao-cheng/</id>
